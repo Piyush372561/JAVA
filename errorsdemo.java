@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class errorsdemo{
     public static void main(String[] args){
 
@@ -18,13 +17,30 @@ public class errorsdemo{
         } */
 
         // Runtime Error
-        Scanner sc = new Scanner(System.in);
+        /* Scanner sc = new Scanner(System.in);
         System.out.println("Enter: ");
         int p = sc.nextInt();
         int a = 14;
         System.out.println(a + p); 
          System.out.println("Enter2: ");
         int k = sc.nextInt();
-        System.out.println("Integer part of 1000 divided by k is "+1000/k);
+        System.out.println("Integer part of 1000 divided by k is "+1000/k); */
+
+    // EXCEPTIONS
+        int a = 1000;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of b: ");
+        int b = sc.nextInt();
+        try {
+            int c = a / b;
+            System.out.println("The Result is: "+c);
+        } catch (Exception e) {
+            System.out.print("Reason: ");
+            System.out.println(e);
+        }
+
+
+
+
     }
 }
