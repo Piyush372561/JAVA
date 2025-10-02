@@ -55,6 +55,6 @@ public class Exceptclass {
 
         //IILEGAL ARGUMENT EXCEPTION.
         CLASS c = new CLASS(" ");
-        c.CLASS();
+        //c.CLASS();
     }
 }
