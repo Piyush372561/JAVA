@@ -1,4 +1,4 @@
-/ Practice sheet 5 -> LOOPS.
+// Practice sheet 5 -> LOOPS.
 
 
 // Question -> 3,4
