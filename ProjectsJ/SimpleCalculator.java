@@ -1,4 +1,4 @@
-package ProjectsJ.java;
+package ProjectsJ;
 
 public class SimpleCalculator {
     
