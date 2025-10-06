@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class practicesheet14 {
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
     //Question-1 -> WAP in java to demonstrate syntax,logical and runtime error.
 
         /* //SYNTAX ERROR
@@ -20,8 +21,7 @@ public class practicesheet14 {
         System.out.println(var5);*/
 
     //Question-2 -> WAP in java that prints 'haha' during Arithmetic Exception and 'hehe' during an IIlegal Argument Exception.
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Variable 6: ");
+       /*System.out.print("Variable 6: ");
         int var6 = sc.nextInt();
         System.out.print("Variable 7: ");
         int var7 = sc.nextInt();
@@ -35,11 +35,31 @@ public class practicesheet14 {
             System.out.println("HaHa");
         } catch(IllegalArgumentException e){
             System.out.println("HeHe");
-        }
+        } */
 
     //Question3 -> WAP in java that allows you to keep accessing an array until a valid index is given. if max retries exceeds 5 print "Error".
-    
+        int[] arr = {2,4,6,8,10,12};
 
+        int retries = 0;
+        boolean valid = false;
+        while(retries < 5){
+            System.out.println("Enter the value of index: ");
+            int i = sc.nextInt();
+            
+            try {
+                System.out.println("Value at index "+i+" is: "+arr[i]);
+                System.out.println("Yes! Now you've entered the right index");
+                valid = true;
+                break;
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Invalid Index. Try Again.");
+                retries++;
+            }
+        }
+        if (!valid) {
+            System.out.println("Error");
+        }
+        System.out.println("Thanks for using this program.");
 
     }
 }

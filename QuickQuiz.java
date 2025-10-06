@@ -15,12 +15,13 @@ public class QuickQuiz {
             System.out.println("Let's TRY for once.");
             try {
                 System.out.println(arr[i]);
+                System.out.println("Yes! Now you've entered the right index.");
                 flag = false;
             } catch (Exception e) {
-                System.out.println("Level 2 Exception.");
+                System.out.println("This is a Level 2 Exception.");
             }
         } catch (Exception e) {
-            System.out.println("Level 1 Exception.");
+            System.out.println("This is a Level 1 Exception.");
         }
     }
     System.out.println("Thanks Using this Program.");
