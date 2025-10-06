@@ -1,6 +1,6 @@
 //Quick Quiz Question -> Write a Java program that allows you to keep accessing an array until a valid index is given by the user ?
 import java.util.Scanner;
-public class NestedTC {
+public class QuickQuiz {
     public static void main(String[] args){
         int[] arr = new int[3];
         arr[0] = 2;
