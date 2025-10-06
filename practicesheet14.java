@@ -1,4 +1,13 @@
 import java.util.Scanner;
+//Question-4 -> Modify program in Q3 to throw a custom Exception if max retries are reached.
+class CustomException extends Exception{
+
+    @Override
+    public String toString() {
+        return "I am custom Exception";
+    }
+     
+}
 public class practicesheet14 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -43,7 +52,7 @@ public class practicesheet14 {
         int retries = 0;
         boolean valid = false;
         while(retries < 5){
-            System.out.println("Enter the value of index: ");
+            System.out.print("Enter the value of index: ");
             int i = sc.nextInt();
             
             try {
@@ -57,9 +66,18 @@ public class practicesheet14 {
             }
         }
         if (!valid) {
-            System.out.println("Error");
+            //System.out.println("Error");
+            //System.out.println("Your attempts of unlock your phone are over.");
+            //System.out.println("We are shutting down your Phone after learning about the right password we will unlock your phone.");
+            try {
+                throw new CustomException();
+            } catch (Exception e) {
+                System.out.println(e.toString());
+            }
         }
         System.out.println("Thanks for using this program.");
+    //Question-5 -> Wrap the program in Q3 inside a method which thwos your custom exception.
+        
 
     }
 }
