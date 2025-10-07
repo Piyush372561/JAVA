@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class pacticesheet1 {
+public class practicesheet1 {
     public static void main(String[] args){
     //Question-1 -> Adding three numbers
         int num1 = 10;
