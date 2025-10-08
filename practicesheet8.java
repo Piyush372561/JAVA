@@ -68,11 +68,15 @@
     }
 } 
 //Practice Questions
+
 //Question One
+
 class Cylinder{
     private int radius;
     private int height;
+
     // Question three bss pehle setter ko comment out kr dena
+
     public Cylinder(){
     radius = 12;
     height = 10;
@@ -114,30 +118,31 @@ class Rectangle{
 }
 
 //Question Five 
-class Sphere{
-    private int radius;
-    private int height;
+    class Sphere{
+        private int radius;
+        private int height;
     
-    public void setRadius(int r){
-        radius = r;
-    }
-    public int getRadius(){
-        return radius;
-    }
+        public void setRadius(int r){
+            radius = r;
+        }
+        public int getRadius(){
+            return radius;
+        }
     //height
-    public void setHeight(int h){
-        height = h;
-    }
-    public int getHeight(){
-        return height;
-    }  
+        public void setHeight(int h){
+            height = h;
+        }
+        public int getHeight(){
+            return height;
+        }  
 }
 
 public class accessmod{
     public static void main(String[] args) {
     //Getter and setter
 
-    // Q-1
+// Q-1
+
     GetSet k = new GetSet();
     k.setName("Piyush");
     System.out.println(k.getNaam());
@@ -147,7 +152,8 @@ public class accessmod{
     //Quizz question 
     System.out.println("Salary: "+k.getSalary());
 
-    // Q-2
+// Q-2
+
     Circle c = new Circle(5,12,6);
     c.setRadius(5);
     System.out.println("Radius of circle: "+c.getRadius());//radius call or print hogya.
@@ -158,26 +164,31 @@ public class accessmod{
     c.setPerimeter(31);
     System.out.println("Perimeter of Circle: "+c.getPerimeter());//perimeter call or print hogya. 
 
-    //Practice Questions
-    //Question one
+//Practice Questions
+
+//Question one
+
     Cylinder cy = new Cylinder();
     //cy.setRadius(5);
     //cy.setHeight(6);
     System.out.println("Radius of a Cylinder: "+cy.getRadius());
     System.out.println("Heightof a Cylinder: "+cy.getHeight());
 
-    //Question two 
+//Question two 
+
     //Surface area - A=2πr (h+r).
     // Volume - V = πr2h.
     System.out.println("Area of Cylinder: "+cy.areaofCylinder());
     System.out.println("Volume of Cylinder: "+cy.volumeOfCylinder());
     
-    //Question four
+//Question four
+
     Rectangle r = new Rectangle(12,10);
     System.out.println("length of a Rectangle: "+r.length);
     System.out.println("breadth of a Rectangle: "+r.breadth);
     
-    // Question Five
+// Question Five
+
     Sphere s = new Sphere();
     s.setRadius(5);
     s.setHeight(6);
