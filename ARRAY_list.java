@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class practicesheet15 {
+public class ARRAY_list {
     public static void main (String[] args){
         //ARRAYLIST 
 
@@ -11,23 +11,21 @@ public class practicesheet15 {
         //var Car = new ArrayList<String>(); 
 
         //ArrayList<String> Car = new ArrayList<>();
-
         Car.add("Ford");
         Car.add("Hyundai");
         Car.add("Maruti Suzuki");
         Car.add("EV");
-        //Car.set(0,"Scorpio");
 
+        //Different methods of ArrayList
+        //Car.set(0,"Scorpio");
         //Car.remove(2);
         //Car.clear();
+         //Sorting of an ArrayList
+        Collections.sort(Car);
 
         //for(int i = 0;i<Car.size();i++){
         //    System.out.println(Car.get(i));
         //}
-
-        //Sorting of an ArrayList
-        Collections.sort(Car);
-
         for(String i : Car){
            System.out.println(i);
         }
