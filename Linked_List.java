@@ -33,8 +33,5 @@ public class Linked_List {
             System.out.println(In.get(i));
 
         }
-
-
-
     }
 }
