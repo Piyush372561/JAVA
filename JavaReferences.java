@@ -9,5 +9,7 @@ public class JavaReferences {
         System.out.println(str.codePointCount(0,5));
         System.out.println(str.compareTo("P"));
         System.out.println(str.compareToIgnoreCase("P"));
+        System.out.println(str.contains("uye"));// it returns whether the sequence of characters is there or not ?
+        System.out.println(str.concat(" kushwaha")); // Appends the string to the another string 
     }
 }
