@@ -1,5 +1,5 @@
+import java.util.ArrayDeque;
 import java.util.ArrayList;
-
 public class AdvancedJava {
     public static void main(String[] args){
         ArrayList<Integer> I = new ArrayList<>();
@@ -26,5 +26,13 @@ public class AdvancedJava {
             System.out.print(I.get(i));
             System.out.print(", ");
         }
+        System.out.println();
+
+        ArrayDeque<Integer> ad = new ArrayDeque<>();
+        ad.add(7);
+        ad.add(97);
+        //ad.addFirst(76);
+        System.out.println(ad.getFirst());
+        System.out.println(ad.getLast());
     }
 }
