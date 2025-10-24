@@ -42,5 +42,6 @@ public class AdvancedJava {
         myHashset.add(8);
         myHashset.add(10);
         System.out.println(myHashset);
+        
     }
 }
