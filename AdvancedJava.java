@@ -8,25 +8,27 @@ public class AdvancedJava {
         I.add(9);
         I.add(12);
         I.add(15);
-        Iterator<Integer> it = I.iterator();
-        while(it.hasNext()){
-           System.out.println(it.next());
-        }
+        
         I.set(1,40);
         System.out.println(I.contains(41));
         System.out.println(I.indexOf(6));
         System.out.println(I.lastIndexOf(6));
         System.out.println(I.contains(15));
         I.ensureCapacity(4);
-        System.out.println(I.iterator());
+        
+        Iterator<Integer> it = I.iterator();
+        while(it.hasNext()){
+           System.out.println(it.next());
+        }
+        
         // I.add(0,1);
-        ArrayList<Integer> I2 = new ArrayList<>();
+       /*  ArrayList<Integer> I2 = new ArrayList<>();
         I2.add(2);
         I2.add(4);
         I2.add(6);
         I2.add(8);
         I2.add(10);
-        I.addAll(0,I2);
+        I.addAll(0,I2); 
 
         for(int i = 0;i<I.size();i++){
             System.out.print(I.get(i));
