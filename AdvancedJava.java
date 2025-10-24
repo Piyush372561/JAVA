@@ -1,9 +1,7 @@
-import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.HashSet;
 public class AdvancedJava {
     public static void main(String[] args){
-        ArrayList<Integer> I = new ArrayList<>();
+       /*  ArrayList<Integer> I = new ArrayList<>();
         ArrayList<Integer> I2 = new ArrayList<>();
         I.add(3);
         I.add(6);
@@ -34,9 +32,15 @@ public class AdvancedJava {
         ad.add(97);
         //ad.addFirst(76);
         System.out.println(ad.getFirst());
-        System.out.println(ad.getLast());
+        System.out.println(ad.getLast()); */
 
         //HASHING TECHNIQUE
-        HashSet<Integer> myHashset = new HashSet<>();
+        HashSet<Integer> myHashset = new HashSet<>(16 ,0.75f);
+        myHashset.add(122);
+        myHashset.add(25);
+        myHashset.add(90);
+        myHashset.add(8);
+        myHashset.add(10);
+        System.out.println(myHashset);
     }
 }
