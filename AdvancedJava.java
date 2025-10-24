@@ -1,5 +1,6 @@
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.HashSet;
 public class AdvancedJava {
     public static void main(String[] args){
         ArrayList<Integer> I = new ArrayList<>();
@@ -36,6 +37,6 @@ public class AdvancedJava {
         System.out.println(ad.getLast());
 
         //HASHING TECHNIQUE
-        
+        HashSet<Integer> myHashset = new HashSet<>();
     }
 }
