@@ -26,7 +26,8 @@ public class AdvancedJava {
             System.out.print(", ");
         }
         System.out.println();
-
+        
+        //ARRAY DEQUE
         ArrayDeque<Integer> ad = new ArrayDeque<>();
         ad.add(7);
         ad.add(97);
@@ -42,6 +43,6 @@ public class AdvancedJava {
         myHashset.add(8);
         myHashset.add(10);
         System.out.println(myHashset);
-        
+
     }
 }
