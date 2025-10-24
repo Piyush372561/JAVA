@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+
 public class AdvancedJava {
     public static void main(String[] args){
         ArrayList<Integer> I = new ArrayList<>();
@@ -15,7 +16,7 @@ public class AdvancedJava {
         System.out.println(I.lastIndexOf(6));
         System.out.println(I.contains(15));
         I.ensureCapacity(4);
-        
+
         Iterator<Integer> it = I.iterator();
         while(it.hasNext()){
            System.out.println(it.next());
