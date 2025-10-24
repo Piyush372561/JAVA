@@ -34,5 +34,8 @@ public class AdvancedJava {
         //ad.addFirst(76);
         System.out.println(ad.getFirst());
         System.out.println(ad.getLast());
+
+        //HASHING TECHNIQUE
+        
     }
 }
