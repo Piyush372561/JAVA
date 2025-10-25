@@ -1,10 +1,8 @@
 //COLLECTION FRAMEWORKS
-import java.util.ArrayList;
-import java.util.Iterator;
 
 public class AdvancedJava {
     public static void main(String[] args){
-        ArrayList<Integer> I = new ArrayList<>();
+        /* ArrayList<Integer> I = new ArrayList<>();
         I.add(3);
         I.add(6);
         I.add(9);
@@ -24,7 +22,7 @@ public class AdvancedJava {
         }
         
         // I.add(0,1);
-       /*  ArrayList<Integer> I2 = new ArrayList<>();
+        ArrayList<Integer> I2 = new ArrayList<>();
         I2.add(2);
         I2.add(4);
         I2.add(6);
@@ -55,5 +53,8 @@ public class AdvancedJava {
         myHashset.add(10);
         System.out.println(myHashset);*/
 
+
+        //DATE AND TIME IN JAVA
+        System.out.println(System.currentTimeMillis()/1000);
     }
 }
