@@ -55,10 +55,19 @@ public class AdvancedJava {
 
 
         //DATE AND TIME IN JAVA
-        System.out.println(System.currentTimeMillis()/3600);
+        
+        // this version is written by me 
         System.out.println(System.currentTimeMillis()/1000);
-        System.out.println(System.currentTimeMillis()/365);
+        System.out.println(System.currentTimeMillis()/3600);
         System.out.println(System.currentTimeMillis()/24);
-        System.out.println(System.currentTimeMillis()/1000/3600/365);
+        System.out.println(System.currentTimeMillis()/365);
+        System.out.println(System.currentTimeMillis()/1000/3600/24/365);
+        // the more elaborated version.
+        System.out.println("Milliseconds: " + System.currentTimeMillis());//milliseconds hai 
+        System.out.println("Seconds: " + System.currentTimeMillis() / 1000);// yaha milliseconds ko seconds me convert hogya 
+        System.out.println("Hours: " + System.currentTimeMillis() / 1000 / 60 / 60); // yaha milliseconds hours me convert hogye 
+        System.out.println("Days: " + System.currentTimeMillis() / 1000 / 60 / 60 / 24); // yaha days me convert hogye 
+        System.out.println("Years: " + System.currentTimeMillis() / 1000 / 60 / 60 / 24 / 365); // yaha years me 
+
     }
 }
