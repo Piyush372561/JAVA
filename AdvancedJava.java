@@ -55,7 +55,7 @@ public class AdvancedJava {
 
 
         //DATE AND TIME IN JAVA
-        
+
         // this version is written by me 
         System.out.println(System.currentTimeMillis()/1000);
         System.out.println(System.currentTimeMillis()/3600);
@@ -69,5 +69,7 @@ public class AdvancedJava {
         System.out.println("Days: " + System.currentTimeMillis() / 1000 / 60 / 60 / 24); // yaha days me convert hogye 
         System.out.println("Years: " + System.currentTimeMillis() / 1000 / 60 / 60 / 24 / 365); // yaha years me 
 
+        System.out.println(Long.MAX_VALUE);
+        System.out.println(System.currentTimeMillis());
     }
 }
