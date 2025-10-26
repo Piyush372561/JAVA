@@ -70,9 +70,9 @@ public class AdvancedJava {
         long l = System.currentTimeMillis(); // YEs we can store no. of milliseconds in a long type variable
         System.out.println("MilliSeconds: "+l);
 
-        //Date d = new Date(125 + 1900, 10, 26, 6, 25);
+        Date d = new Date(125 + 1900, 10, 26, 6, 25);
         // Date d = new Date(7578910);
-        Date d = new Date();
+        Date d2 = new Date("28 October 2025 12:20:36");
         System.out.println(d);
         System.out.println(d.getTime());
         //Deprecated method of Date class.
@@ -82,6 +82,8 @@ public class AdvancedJava {
         System.out.println(d.getYear());
         System.out.println(d.getDay());
         System.out.println(d.hashCode());
+        System.out.println(d.after(d2));
+        System.out.println(d2.before(d));
         
         //CALENDAR CLASS 
         
