@@ -1,4 +1,8 @@
 //COLLECTION FRAMEWORKS
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -130,5 +134,22 @@ public class AdvancedJava {
        System.out.println(TimeZone.getDefault());
 
        //System.out.println(TimeZone.getTimeZone().getId());
+       
+       // JAVA.TIME API's 
+       LocalDate ld = LocalDate.now();
+       System.out.println(ld);
+
+       LocalTime lt = LocalTime.now();
+       System.out.println(lt);
+
+       LocalDateTime ldt = LocalDateTime.now();
+       System.out.println(ldt);
+
+       DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy -- E H:ma");
+       DateTimeFormatter dtf2 = DateTimeFormatter.ISO_DATE_TIME;
+       String str = ldt.format(dtf);
+       String str2 = ldt.format(dtf2); 
+       System.out.println(str);
+       System.out.println(str2);
     }
 }
