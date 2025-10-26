@@ -129,6 +129,6 @@ public class AdvancedJava {
 
        System.out.println(TimeZone.getDefault());
 
-       System.out.println(TimeZone.getTimeZone().getId());
+       //System.out.println(TimeZone.getTimeZone().getId());
     }
 }
