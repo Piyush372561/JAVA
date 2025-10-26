@@ -1,4 +1,5 @@
 //COLLECTION FRAMEWORKS
+import java.util.Calendar;
 import java.util.Date;
 public class AdvancedJava {
     public static void main(String[] args){
@@ -86,7 +87,10 @@ public class AdvancedJava {
         System.out.println(d2.before(d));
         
         //CALENDAR CLASS 
-        
+        //Calendar cl = Calendar.getInstance(TimeZone.getTimeZone("Asia/Singapore"));
+        Calendar cl = Calendar.getInstance();
+        System.out.println(cl.getCalendarType());
+        System.out.println(cl.getTimeZone().getID());
 
     }
 }
