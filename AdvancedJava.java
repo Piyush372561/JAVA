@@ -75,11 +75,13 @@ public class AdvancedJava {
         Date d = new Date();
         System.out.println(d);
         System.out.println(d.getTime());
-        System.out.println(d.getTime());
+        //Deprecated method of Date class.
         System.out.println(d.getDate());
         System.out.println(d.getSeconds());
         System.out.println(d.getMinutes());
         System.out.println(d.getYear());
         System.out.println(d.getDay());
+
+
     }
 }
