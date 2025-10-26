@@ -67,7 +67,8 @@ public class AdvancedJava {
         System.out.println("Days: " + System.currentTimeMillis() / 1000 / 60 / 60 / 24); // yaha days me convert hogye 
         System.out.println("Years: " + System.currentTimeMillis() / 1000 / 60 / 60 / 24 / 365); // yaha years me 
         System.out.println(Long.MAX_VALUE);
-        System.out.println(System.currentTimeMillis());
+        long l = System.currentTimeMillis(); // YEs we can store no. of milliseconds in a long type variable
+        System.out.println("MilliSeconds: "+l);
         Date d = new Date();
         System.out.println(d);
         System.out.println(d.getTime());
