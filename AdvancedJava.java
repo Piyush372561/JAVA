@@ -1,6 +1,7 @@
 //COLLECTION FRAMEWORKS
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 public class AdvancedJava {
     public static void main(String[] args){
         /* ArrayList<Integer> I = new ArrayList<>();
@@ -89,8 +90,27 @@ public class AdvancedJava {
         //CALENDAR CLASS 
         //Calendar cl = Calendar.getInstance(TimeZone.getTimeZone("Asia/Singapore"));
         Calendar cl = Calendar.getInstance();
+        int hour12 = cl.get(Calendar.HOUR);
+        int hour24 = cl.get(Calendar.HOUR_OF_DAY);
+        int am_pm = cl.get(Calendar.AM_PM);
+        System.out.println("In 12-hour format: "+hour12+ (am_pm == 0 ? "AM" : "PM"));
+        System.out.println("In 24-hour format: "+hour24);
         System.out.println(cl.getCalendarType());
         System.out.println(cl.getTimeZone().getID());
+        System.out.println(cl.getTime());
+        System.out.println(cl.get(Calendar.SECOND));
+        System.out.println(cl.get(Calendar.MINUTE));
+        System.out.println(cl.get(Calendar.DATE));
+        System.out.println(cl.get(Calendar.YEAR));
+        System.out.println(cl.get(Calendar.HOUR));
+        System.out.println(cl.get(Calendar.HOUR_OF_DAY));
+        System.out.println(cl.get(Calendar.HOUR_OF_DAY)+ ":" +cl.get(Calendar.MINUTE)+ ":" +cl.get(Calendar.SECOND));
+
+        //GREGORIAN CALENDAR
+        GregorianCalendar GCal = new GregorianCalendar();
+        System.out.println(GCal.isLeapYear(2020));
+        
+        //TIME ZONE 
 
     }
 }
