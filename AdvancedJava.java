@@ -2,6 +2,7 @@
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.TimeZone;
 public class AdvancedJava {
     public static void main(String[] args){
         /* ArrayList<Integer> I = new ArrayList<>();
@@ -109,8 +110,25 @@ public class AdvancedJava {
         //GREGORIAN CALENDAR
         GregorianCalendar GCal = new GregorianCalendar();
         System.out.println(GCal.isLeapYear(2020));
-        
-        //TIME ZONE 
 
+        //TIME ZONE 
+       Calendar india = Calendar.getInstance(TimeZone.getTimeZone("Asia/kolkata"));
+       Calendar Singapore = Calendar.getInstance(TimeZone.getTimeZone("Asia/Singapore"));
+
+       System.out.println("Indian Time: "+india.getTime());
+       System.out.println("Singapore Time: "+Singapore.getTime());
+
+       System.out.println("Indian Time: "+india.get(Calendar.HOUR_OF_DAY));
+       System.out.println("Singapore Time: "+Singapore.get(Calendar.HOUR_OF_DAY));
+
+       System.out.println(TimeZone.getAvailableIDs()[0]);
+       System.out.println(TimeZone.getAvailableIDs()[1]);
+       System.out.println(TimeZone.getAvailableIDs()[2]);
+       System.out.println(TimeZone.getAvailableIDs()[3]);
+       System.out.println(TimeZone.getAvailableIDs()[4]);
+
+       System.out.println(TimeZone.getDefault());
+
+       System.out.println(TimeZone.getTimeZone().getId());
     }
 }
