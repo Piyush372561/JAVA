@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Date;
 public class DateAndTime {
     public static void main(String[] args){
@@ -32,6 +33,34 @@ public class DateAndTime {
         } else {
             System.out.println("Both Are same dates.");
         }
-        //
+        //Add 5 days to a Date object (hint: use Calendar with setTime(Date)).
+        // My Approach and how i understand the Question
+        Date d3 = new Date(126,1,7);
+        Date d4 = new Date(126,2,7);
+        Date d5 = new Date(126,4,7);
+        Date d6 = new Date(126,10,7);
+        Date d7 = new Date(126,10,27);
+        
+        Calendar india = Calendar.getInstance();
+        india.setTime(d3);
+        System.out.println(india.getTime());
+        india.setTime(d4);
+        System.out.println(india.getTime());
+        india.setTime(d5);
+        System.out.println(india.getTime());
+        india.setTime(d6);
+        System.out.println(india.getTime());
+        india.setTime(d7);
+        System.out.println(india.getTime());
+        // Correct Approach to understand a question
+        Date ld3 = new Date(126,0,7); 
+
+        Calendar India = Calendar.getInstance();
+        India.setTime(ld3);
+        System.out.println("Original Date: "+India);
+
+        India.add(Calendar.DATE, 5);
+        System.out.println("Date after 5 days: "+India.getTime());
+
     }
 }
