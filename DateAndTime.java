@@ -66,6 +66,8 @@ public class DateAndTime {
         India.add(Calendar.DATE, 5);
         System.out.println("Date after 5 days: "+India.getTime());
 
+        //CALENDAR CLASS 
+
         //Get the current hour, minute, and second using Calendar.
         Calendar India2 = Calendar.getInstance();
         System.out.println(India2.getTime());
@@ -95,8 +97,10 @@ public class DateAndTime {
         }else {
             System.out.println("Both Date are same.");
         }
-       
-        
+
+        //Find the last day of the current month using Calendar.
+        int i = cl.getMaximum(Calendar.DAY_OF_MONTH);
+        System.out.println("Last Day of the is: "+i);
 
     }
 }
