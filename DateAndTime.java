@@ -1,20 +1,25 @@
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 public class DateAndTime {
     public static void main(String[] args){
+
         //Create a Date object for the current time and print it.
         Date d = new Date();
         System.out.println(d.getTime());
         System.out.println(d);
+
         //Create a Date object using a specific date string like "26 Nov 2025 14:30:00" and print it.
         Date d2 = new Date("02 Nov 2025 14:30:00");
         System.out.println(d2);
+
         //Print year, month, and day of a Date object.
         System.out.println(d2.getDate());
         System.out.println(d2.getYear());
         System.out.println(d2.getMonth());
         System.out.println(d2.getDay());
+
         //Compare two Date objects and print which one is earlier.
         System.out.println(d.before(d2));
         if(d.before(d2)){
@@ -33,6 +38,7 @@ public class DateAndTime {
         } else {
             System.out.println("Both Are same dates.");
         }
+
         //Add 5 days to a Date object (hint: use Calendar with setTime(Date)).
         // My Approach and how i understand the Question
         Date d3 = new Date(126,1,7);
@@ -40,7 +46,6 @@ public class DateAndTime {
         Date d5 = new Date(126,4,7);
         Date d6 = new Date(126,10,7);
         Date d7 = new Date(126,10,27);
-        
         Calendar india = Calendar.getInstance();
         india.setTime(d3);
         System.out.println(india.getTime());
@@ -52,15 +57,45 @@ public class DateAndTime {
         System.out.println(india.getTime());
         india.setTime(d7);
         System.out.println(india.getTime());
+
         // Correct Approach to understand a question
         Date ld3 = new Date(126,0,7); 
-
         Calendar India = Calendar.getInstance();
         India.setTime(ld3);
         System.out.println("Original Date: "+India);
-
         India.add(Calendar.DATE, 5);
         System.out.println("Date after 5 days: "+India.getTime());
+
+        //Get the current hour, minute, and second using Calendar.
+        Calendar India2 = Calendar.getInstance();
+        System.out.println(India2.getTime());
+        System.out.println(India2.get(Calendar.HOUR_OF_DAY));
+        System.out.println(India2.get(Calendar.MINUTE));
+        System.out.println(India2.get(Calendar.SECOND));
+
+        //Print the current day of week, day of month, and month using Calendar.
+        System.out.println(India2.get(Calendar.DAY_OF_WEEK));
+        System.out.println(India2.get(Calendar.DAY_OF_MONTH));
+        System.out.println(India2.get(Calendar.MONTH));
+        //System.out.println(India2.get(Calendar.));
+
+        //Create a Calendar for "Asia/Singapore" timezone and print the hour difference from "Asia/Kolkata".
+        Calendar cl = Calendar.getInstance(TimeZone.getTimeZone("Asia/Singapore"));
+        System.out.println("We are in "+cl.getTime()+" Time Zone.");
+        //System.out.println(cl.getId());ye calendar class ke pass nhi TimeZone ke pass hota hai 
+        System.out.println(cl.getTimeZone().getID());
+        Calendar cl2 = Calendar.getInstance(TimeZone.getTimeZone("Asia/kolkata"));
+        System.out.println("Indian Time: "+cl2.getTime());
+
+        //Check if a Calendar date is before or after another date.
+        if (cl2.before(cl)) {
+            System.out.println(cl2+" Comes before "+cl);
+        } else if(cl.before(cl2)){
+            System.out.println(cl+" Comes before "+cl2);
+        }else {
+            System.out.println("Both Date are same.");
+        }
+       
         
 
     }
