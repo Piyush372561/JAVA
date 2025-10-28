@@ -1,9 +1,10 @@
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 public class DateAndTime {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
 
         //Create a Date object for the current time and print it.
         Date d = new Date();
@@ -102,5 +103,67 @@ public class DateAndTime {
         int i = cl.getMaximum(Calendar.DAY_OF_MONTH);
         System.out.println("Last Day of the is: "+i);
 
+        // SIMPLE DATE FORMAT
+        //Convert a Date object to a string in the format "dd-MM-yyyy HH:mm:ss".
+        SimpleDateFormat Sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date d1 = new Date("28/10/2025 13:25:37"); 
+        System.out.println(d1);
+        
+        //Parse a string "26/11/2025 14:30" to a Date object.
+        SimpleDateFormat Sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        Date d9 = new Date();
+        System.out.println("The actual Date is: "+d9);
+
+        //Print the current date in 12-hour format with AM/PM.
+        // My written code 
+        Calendar cl5 = Calendar.getInstance();
+        int In12Hformat = cl5.get(Calendar.HOUR);
+        int Am_Pm = cl5.get(Calendar.AM_PM);
+        System.out.println("In Day time: "+In12Hformat+ (Am_Pm == 0 ? "AM" : "PM"));// Wrong because you printing time only 
+        // BY Chatgpt
+        SimpleDateFormat Sdf3 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss a");
+        Date now = new Date();
+        System.out.println("Date and Time in 12-hour format: "+Sdf3.format(now));
+
+        //Format the current date as "EEEE, MMMM dd, yyyy" (full day and month names).
+        SimpleDateFormat Sdf4 = new SimpleDateFormat("EEEE, MMMM dd, yyyy");
+        Date Now = new Date();
+        System.out.println("New Format: "+Sdf4.format(Now));
+        //Random Question
+        SimpleDateFormat S5 = new SimpleDateFormat("EEEE, dd-MMMM-yyyy");
+        Date d10 = new Date();
+        System.out.println("New Format: "+S5.format(d10));
+
+        //Convert a date string "28-10-2025" to yyyy/MM/dd format using SimpleDateFormat.
+        SimpleDateFormat Sdf5 = new SimpleDateFormat("yyyy/MM/dd");
+        Date d11 = new Date();
+        System.out.println(Sdf5.format(d11));
+
+        /* String str = "28-10-2025";
+        SimpleDateFormat Output_date = new SimpleDateFormat("dd-MM-yyyy");
+        System.out.println("Formatted Date: "+Output_date.format(str)); 
+
+        try {
+            String str = "28-10-2025";
+            SimpleDateFormat inputFormat = new SimpleDateFormat("dd-MM-yyyy");
+            Date date = inputFormat.parse(str);
+
+            SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy/MM/dd");
+            String formattedDate = outputFormat.format(date);
+            System.out.println("Formatted Date: " + formattedDate);
+
+        } catch (ParseException e) {
+            System.out.println("Invalid date format: " + e.getMessage());
+        } */
+        
+            String str = "28-10-2025";
+            SimpleDateFormat inputFormat = new SimpleDateFormat("dd-MM-yyyy");
+            Date date = inputFormat.parse(str);
+
+            SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy/MM/dd");
+            String formattedDate = outputFormat.format(date);
+            System.out.println("Formatted Date: " + formattedDate);
+            
+        //4️⃣ TimeZone
     }
 }
