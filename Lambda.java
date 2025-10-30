@@ -1,5 +1,5 @@
 interface DemoAno{
-    void meth1(String s);
+    void meth1(String s1, String s2);
     //void meth2();
 }
 //class AnonyDemo implements DemoAno{
@@ -38,7 +38,7 @@ public class Lambda {
     };
     obj.meth1(); */
         //LAMBDA EXPRESSIONS
-        DemoAno dm = (s)->{ System.out.println("My name is Piyush "+s);};
-        dm.meth1("Kushwaha");
+        DemoAno dm = (s,s2)->{ System.out.println("My name is Piyush "+s+" String: "+s2);};
+        dm.meth1("Kushwaha","First name");
   }
 }
