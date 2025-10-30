@@ -1,11 +1,8 @@
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Scanner;
 public class FileHandling {
     public static void main(String[] args) {
         //Code to create a File.
-        File myfile = new File("1st Java File");
+        /*File myfile = new File("1st Java File");
         try {
           myfile.createNewFile(); 
         } 
@@ -33,11 +30,17 @@ public class FileHandling {
                 String str = sc.nextLine();
                 System.out.println(str);
             }
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        
-        
+           */
+        //Code to Delete a file.
+        File MynewFile = new File("1st Java File");
+        if (MynewFile.delete()) {
+            System.out.println("I have deleted my file. "+MynewFile.getName());
+        } else{
+            System.out.println("Some Problems Occured in Deleting a file.");
+        }
 
         
     }
