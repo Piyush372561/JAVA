@@ -17,5 +17,20 @@ public class FileOutputstreams {
             e.printStackTrace();
             System.out.println("Error in writing File.");
         }
+
+        //Question -> 1
+        String name = "Piyush Kushwaha.\n";
+        int index = 69;
+        String branch = "Data Science\n";
+
+        try {
+            FileOutputStream fos1 = new FileOutputStream("Question1.txt");
+            fos1.write(("Name: "+name).getBytes());
+            fos1.write(("Roll no.= "+String.valueOf(index)).getBytes());
+            fos1.write("\n".getBytes());
+            fos1.write(("Branch: "+branch).getBytes());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
