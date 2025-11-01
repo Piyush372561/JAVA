@@ -7,17 +7,17 @@ public class IOStreams {
         System.out.println("Java is running in this folder:");
         System.out.println(System.getProperty("user.dir")); // <-- current working directory
         
-        File file = new File("1stJavaFile.txt");
+        File file = new File("Question1.txt");
         System.out.println("Absolute path: " + file.getAbsolutePath());
         System.out.println("File exists? " + file.exists());
         
         
-        System.out.println(new java.io.File("1stJavaFile.txt").getAbsolutePath());
+        System.out.println(new java.io.File("Question1.txt").getAbsolutePath());
 
-        try(FileInputStream fis = new FileInputStream("C:\\Users\\kushw\\OneDrive\\Desktop\\CODING\\JAVA\\1stJavaFile.txt")) {
+        try(FileInputStream fis = new FileInputStream("Question1.txt")) {
             int i;
             while((i = fis.read()) != -1){
-                System.out.println((char) i);
+                System.out.print((char) i);
             }
         } catch (IOException e) {
                 e.printStackTrace(); 
