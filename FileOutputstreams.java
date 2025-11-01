@@ -22,13 +22,15 @@ public class FileOutputstreams {
         String name = "Piyush Kushwaha.\n";
         int index = 69;
         String branch = "Data Science\n";
+        String college = "SRGI";
 
         try {
-            FileOutputStream fos1 = new FileOutputStream("Question1.txt");
+            FileOutputStream fos1 = new FileOutputStream("Question1.txt",true);
             fos1.write(("Name: "+name).getBytes());
             fos1.write(("Roll no.= "+String.valueOf(index)).getBytes());
             fos1.write("\n".getBytes());
             fos1.write(("Branch: "+branch).getBytes());
+            fos1.write(("College: "+college).getBytes());
         } catch (Exception e) {
             e.printStackTrace();
         }
