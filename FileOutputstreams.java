@@ -22,7 +22,7 @@ public class FileOutputstreams {
         String name = "Piyush Kushwaha.\n";
         int index = 69;
         String branch = "Data Science\n";
-        String college = "SRGI";
+        String college = "SRGI\n";
 
         try {
             FileOutputStream fos1 = new FileOutputStream("Question1.txt",true);
