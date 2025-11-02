@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class BufferdRW {
     public static void main(String[] args) {
-        try(BufferedReader BR = new BufferedReader(new FileReader("1stJavaFile.txt"))){
+        try(BufferedReader BR = new BufferedReader(new FileReader("Question1.txt"))){
             String line;
 
             while((line = BR.readLine()) != null){
