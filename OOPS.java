@@ -1,13 +1,9 @@
-class Inherit{
-    public void Inherit() {
-      System.out.println("Hello!");
-      System.out.println("My name is Piyush.");
-      System.out.println("It's been a while Since i code. ");
-    }
-}
+// THIS OOPS FILE WILL INCLUDE ALL PRACTICE PROBLEMS.
+// AUTHOR : PIYUSH KUSHWAHA.
+
 public class OOPS {
     public static void main(String[] args){
-        Inherit I = new Inherit();
-        I.Inherit();
+        //GREETINGS.
+        System.out.println("HEllo! GitHub this is my OOPS class.");
     }
 }
