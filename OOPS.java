@@ -11,5 +11,7 @@ public class OOPS {
         Bike moBikes = new Bike();
         System.out.println("My First Favourite bike: "+moBikes.B1);
         System.out.println("My Second Favourite bike: "+moBikes.B2);
+        //Inheritance 
+        
     }
 }
