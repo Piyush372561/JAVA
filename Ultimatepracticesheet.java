@@ -14,7 +14,7 @@ public class Ultimatepracticesheet {
        int Sum = num1 + num2;
 
        // Printing the result
-       System.out.println("Sum of "+num1+" and "+num2+" = "+Sum); */
+       System.out.println("Sum of "+num1+" and "+num2+" = "+Sum); 
 
        //PROBLEM 2
        //Taking input
@@ -30,6 +30,28 @@ public class Ultimatepracticesheet {
        Var2 = temp;
        //Print Var1 and Var2 after Swapping
        System.out.println("Value of Variable 1 after Swapping: "+Var1);
-       System.out.println("Value of Variable 2 after Swapping: "+Var2);
+       System.out.println("Value of Variable 2 after Swapping: "+Var2); 
+
+       //PROBLEM 3
+       System.out.print("Enter the value of n: ");
+       int n = sc.nextInt();
+
+       if (n % 2 == 0) {
+            System.out.println(n+" is an even number");
+       } else {
+            System.out.println(n+" is an odd number");
+       }     */
+
+       //PROBLEM 4 -> REVERSE A NUMBER
+       System.out.print("Enter the number: ");
+       int numb = sc.nextInt();
+       int reversed = 0;
+       while(numb != 0){
+           int digit = numb % 10;
+           reversed = reversed * 10 + digit;
+           numb = numb / 10;
+       }
+       System.out.println("Reversed number: "+reversed);
+       
     }
 }
