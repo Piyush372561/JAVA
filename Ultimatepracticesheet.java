@@ -40,7 +40,7 @@ public class Ultimatepracticesheet {
             System.out.println(n+" is an even number");
        } else {
             System.out.println(n+" is an odd number");
-       }     */
+       }     
 
        //PROBLEM 4 -> REVERSE A NUMBER
        System.out.print("Enter the number: ");
@@ -53,5 +53,28 @@ public class Ultimatepracticesheet {
        }
        System.out.println("Reversed number: "+reversed);
        
+
+        //PROBLEM 5 -> Area of Rectangle
+        System.out.print("Length: "); 
+        int l = sc.nextInt();
+        System.out.print("Width: "); 
+        int w = sc.nextInt();
+
+        int area = l * w;
+        System.out.println("Area of rectangle: "+area); */
+
+        //PROBLEM 6 -> sum of the digits
+        System.out.print("Enter the value of n:");
+        int n = sc.nextInt();
+        int count = 1;
+        int sum = 0;
+        while(count <= n){
+           sum = sum + count;
+           count = count + 1;
+        }
+        System.out.println("Sum: "+sum);
+
+        //PROBLEM 7 -> CONVERT CELSIUS TO FAHRENHIET
+        
     }
 }
