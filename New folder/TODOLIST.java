@@ -1,5 +1,0 @@
-public class TODOLIST {
-    public static void main(String[] args) {
-        System.out.println("TO-DO LIST App.");
-    }
-}
