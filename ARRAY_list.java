@@ -46,5 +46,10 @@ public class ARRAY_list {
             System.out.println(ClonedList.get(i));
 
         }
+
+
+        //No. of ways to create an ArrayList
+        //1. ArrayList<String> Car = new ArrayList<>();
+    
     }
 }
