@@ -1,55 +1,33 @@
 import java.util.ArrayList;
-import java.util.Collections;
-
 public class ARRAY_list {
     public static void main (String[] args){
-        //ARRAYLIST 
-
-        //List<String> Car = new ArrayList<>();
-
-        //var Car = new ArrayList<String>(); 
-
-        ArrayList<String> Car = new ArrayList<>();
-        Car.add("Ford");
-        Car.add("Hyundai");
-        Car.add("Maruti Suzuki");
-        Car.add("EV");
-
-        //Different methods of ArrayList
-        //Car.set(0,"Scorpio");
-        //Car.remove(2);
-        //Car.clear();
-        //Car.contains("Thar");
-         //Sorting of an ArrayList
-        Collections.sort(Car);
-        //System.out.println(Car.contains("Thar"));
-        
-
-
-        //for(int i = 0;i<Car.size();i++){
-        //    System.out.println(Car.get(i));
-        //}
-        if (Car.contains("Thar")) {
-            System.out.println("Yes!!! We have Thar.");
-        } else{
-            System.out.println("Sorry! Sir We don't Sell Mahindra Cars.");
-        }
-
-        for(String i : Car){
-           System.out.println(i);
-        }
-        //System.out.println(Car);
-        ArrayList<String> ClonedList = (ArrayList<String>) Car.clone();
-        ClonedList.add("Thar");
-        ClonedList.add("Nano");
-        for(int i = 0;i<ClonedList.size();i++){
-            System.out.println(ClonedList.get(i));
-
-        }
-
 
         //No. of ways to create an ArrayList
-        //1. ArrayList<String> Car = new ArrayList<>();
-    
+       // Default Constructor, creates an empty capacity of 10
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.remove(1);
+        System.out.println("List using remove = "+list);
+        list.remove(Integer.valueOf(1));
+        System.out.println("List using remove(Integer.valueOf(1)) = "+list);
+        /*
+         
+        //creating an Arraylist with a specified initial capacity
+        2. ArrayList<Integer> list = new ArrayList<>(20);
+
+        //creating an ArrayList from another collection
+        3. list<String> anotherList = Arrays.asList("A", "B", "C");
+           ArrayList<String> listFromCollection = new ArrayList<>(anotherList);
+
+        // This creates an immutable list, which cannot be modified after creation.
+        4. List<Integer> list4 = List.of(1, 2, 3, 4, 5);
+         list.addAll(list);
+         System.out.println(list);
+          */
+        
     }
 }
