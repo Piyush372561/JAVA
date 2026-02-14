@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 public class ARRAY_list {
     public static void main (String[] args){
 
@@ -6,14 +7,25 @@ public class ARRAY_list {
        // Default Constructor, creates an empty capacity of 10
         ArrayList<Integer> list = new ArrayList<>();
 
-        list.add(1);
-        list.add(2);
-        list.add(3);
         list.add(4);
+        list.add(1);
+        list.add(0);
+        list.add(3);
         list.remove(1);
         System.out.println("List using remove = "+list);
         list.remove(Integer.valueOf(1));
         System.out.println("List using remove(Integer.valueOf(1)) = "+list);
+
+        //we can convert list into Array using toArray() method. There are two variations of this method:
+        Object[] array = list.toArray();
+        Integer[] array2 = list.toArray(new Integer[0]);
+        System.out.println("Array using toArray() method = "+array);
+        System.out.println("Array using toArray(new Integer[0]) method = "+array2);
+
+        //Sorting of an Arraylist
+        Collections.sort(list);
+        System.out.println(list);
+
         /*
          
         //creating an Arraylist with a specified initial capacity
