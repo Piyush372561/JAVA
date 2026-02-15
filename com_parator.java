@@ -1,9 +1,6 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
-import java.util.List;
-
-class Student{
+/*class Student{
     String name;
     int age;
 
@@ -24,17 +21,25 @@ class Student{
 class StringLengthComparator implements Comparator<String> {
     @Override
     public int compare(String s1, String s2) {
-        return s1.length() - s2.length(); // Sort in ascending order by length
-        //return s2.length() - s1.length(); // Sort in descending order by length
+
+        // Sort in ascending order by length
+        return s1.length() - s2.length(); 
+
+        // Sort in descending order by length
+        //return s2.length() - s1.length(); 
     }
-}
+} */
 
 class MyComparator implements Comparator<Integer> {
 
     @Override
     public int compare(Integer i1, Integer i2) {
-       // return i1 - i2; Sort in ascending order
-        return i2 - i1; // Sort in descending order
+
+        // Sort in ascending order
+        //return i1 - i2; 
+       
+       // Sort in descending order
+        return i2 - i1; 
     }
 }
         
@@ -42,11 +47,11 @@ public class com_parator {
     public static void main(String[] args) {
         System.out.println("Comparator");
 
-        ArrayList<Student> students = new Arraylist<>();
+        /*ArrayList<Student> students = new Arraylist<>();
         students.add(new Student("Piyush", 20));
         students.add(new Student("Micky", 22));
         students.add(new Student("Avi", 19));
-        students.sort(null);
+        students.sort(null); */
 
 
         ArrayList<Integer> list = new ArrayList<>();
@@ -55,8 +60,14 @@ public class com_parator {
         list.add(0);
         list.add(3);
 
-        list.sort((i1, i2) -> i1 - i2); // Sort in ascending order
+        //Ye sort method list ke elements ko sort kar deta hai, aur null pass karne par natural order me sort karta hai.
+        list.sort(new MyComparator());
         System.out.println(list);
+
+        /*  Sort in ascending order
+        list.sort((i1, i2) -> i1 - i2);
+        System.out.println(list);
+
         //Ye sort method list ke elements ko sort kar deta hai, aur null pass karne par natural order me sort karta hai.
         list.sort(new MyComparator());
         System.out.println(list);
@@ -68,6 +79,6 @@ public class com_parator {
 
         words.sort(new StringLengthComparator());
         System.out.println(words);
-
+            */
     }
 }
