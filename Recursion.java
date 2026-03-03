@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Recursion{
-   /*  //Question-1 : Write a recursive function to print numbers from n to 1.
+    //Question-1 : Write a recursive function to print numbers from n to 1.
     public static void printNumbers(int n){
         if(n == 0){
             return;
@@ -15,7 +15,7 @@ public class Recursion{
         }
         return n + sumOfNaturalNumbers(n - 1);
     }
-     */
+     
 
     //Question-3 : Write a recursive function to count the number of digits in a given number.
     public static int countDigits(int n){
@@ -64,25 +64,34 @@ public class Recursion{
             return gcd(b, a % b);
         }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-       /*  System.out.println("Enter a number: ");
+        //Question-1 
+        System.out.println("Enter a number: ");
         int n = sc.nextInt();
         System.out.println("Printing numbers from " + n + " to 1:");
         printNumbers(n);
+
+        //Question-2
         System.out.println("\nSum of first " + n + " natural numbers: " + sumOfNaturalNumbers(n)); 
+
+        //Question-3
         System.out.println("Enter a number to count its digits: ");
         int num = sc.nextInt();
         System.out.println("Number of digits in " + num + " is: " + countDigits(num));
 
+        //Question-4
         System.out.println("Enter a number to reverse: ");
         int numberToReverse = sc.nextInt();
         System.out.println("Reversed number: " + reverseNumber(numberToReverse));
 
+        //Question-5
         System.out.println("Enter a number to check if it is palindrome: ");
         int numberToCheck = sc.nextInt();
         System.out.println("Is " + numberToCheck + " a palindrome? " + isPalindrome(numberToCheck));
 
+        //Question-6
         System.out.println("Enter the number of terms for Fibonacci series: ");
         int terms = sc.nextInt();
         System.out.println("Fibonacci series up to " + terms + " terms:");
@@ -90,12 +99,13 @@ public class Recursion{
             System.out.print(fibonacci(i) + " ");
         } 
   
+        //Question-7
         System.out.println("\nEnter base and exponent to calculate power: ");
         int base = sc.nextInt();
         int exp = sc.nextInt();
-        System.out.println(base + " raised to the power of " + exp + " is: " + power(base, exp)); */
+        System.out.println(base + " raised to the power of " + exp + " is: " + power(base, exp)); 
         
-        System.out.println("Enter two numbers to find their GCD: ");
+        //Question-8
         int a = sc.nextInt();
         int b = sc.nextInt();
 
